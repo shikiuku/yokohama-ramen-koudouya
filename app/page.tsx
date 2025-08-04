@@ -159,13 +159,16 @@ export default function RamenRestaurant() {
                   key={index}
                   className="relative"
                 >
-                  <Image
-                    src={item.image || "/placeholder.svg"}
-                    alt={item.alt || "ラーメン"}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto object-contain"
-                  />
+                  <div className="absolute -inset-[2px] bg-black rounded-lg"></div>
+                  <div className="relative">
+                    <Image
+                      src={item.image || "/placeholder.svg"}
+                      alt={item.alt || "ラーメン"}
+                      width={400}
+                      height={300}
+                      className="w-full h-auto object-contain rounded"
+                    />
+                  </div>
                 </div>
               ))}
             </div>

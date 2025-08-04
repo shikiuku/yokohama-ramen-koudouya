@@ -19,7 +19,11 @@
       "Bash(git add:*)",
       "Bash(rm:*)",
       "mcp__vercel__projects-get-projects",
-      "mcp__vercel__projects-create-project"
+      "mcp__vercel__projects-create-project",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "mcp__github__search_repositories",
+      "Bash(gh:*)"
     ],
     "deny": []
   }
