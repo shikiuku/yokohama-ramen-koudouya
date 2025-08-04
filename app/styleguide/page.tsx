@@ -17,6 +17,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Progress } from "@/components/ui/progress"
 import { Separator } from "@/components/ui/separator"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import Image from "next/image"
 import { 
   MapPin, Clock, Phone, Star, ChefHat, Utensils, Building, 
   CheckCircle, Users, AlertCircle, Info, XCircle, Home,
@@ -461,6 +462,33 @@ export default function StyleGuide() {
             ))}
           </div>
         </section>
+
+        {/* Menu Photo Border Style */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8 text-white">メニュー写真枠線スタイル</h2>
+          
+          <div className="max-w-md mx-auto">
+            <h3 className="text-lg font-bold mb-4 text-white text-center">内側3px + 外側3px 黒枠線</h3>
+            <div className="bg-gray-800 p-4 rounded-lg">
+              <div className="relative">
+                <div className="absolute inset-0 -m-[3px] border-[3px] border-black z-10"></div>
+                <Image
+                  src="/ramen-photos/ramen1.jpg"
+                  alt="ラーメン"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto object-contain relative z-20"
+                />
+                <div className="absolute inset-0 border-[3px] border-black pointer-events-none z-30"></div>
+              </div>
+            </div>
+            <p className="text-gray-300 text-sm mt-4 text-center">
+              写真に3pxの内側枠線が重なり、さらに3pxの外側枠線で囲まれています。
+            </p>
+          </div>
+        </section>
+
+        <Separator className="my-16 bg-red-900" />
 
         {/* Side Menu Color Variations */}
         <section className="mb-16">
