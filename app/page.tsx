@@ -157,17 +157,18 @@ export default function RamenRestaurant() {
               {menuItems.map((item, index) => (
                 <div
                   key={index}
-                  className="relative"
+                  className="relative bg-black p-[3px]"
                 >
-                  <div className="absolute inset-0 -m-[3px] border-[3px] border-black z-10"></div>
-                  <Image
-                    src={item.image || "/placeholder.svg"}
-                    alt={item.alt || "ラーメン"}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto object-contain relative z-20"
-                  />
-                  <div className="absolute inset-0 border-[3px] border-black pointer-events-none z-30"></div>
+                  <div className="relative">
+                    <Image
+                      src={item.image || "/placeholder.svg"}
+                      alt={item.alt || "ラーメン"}
+                      width={400}
+                      height={300}
+                      className="w-full h-auto object-contain"
+                    />
+                    <div className="absolute inset-0 border-[3px] border-black pointer-events-none"></div>
+                  </div>
                 </div>
               ))}
             </div>

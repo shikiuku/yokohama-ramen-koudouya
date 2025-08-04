@@ -470,16 +470,17 @@ export default function StyleGuide() {
           <div className="max-w-md mx-auto">
             <h3 className="text-lg font-bold mb-4 text-white text-center">内側3px + 外側3px 黒枠線</h3>
             <div className="bg-gray-800 p-4 rounded-lg">
-              <div className="relative">
-                <div className="absolute inset-0 -m-[3px] border-[3px] border-black z-10"></div>
-                <Image
-                  src="/ramen-photos/ramen1.jpg"
-                  alt="ラーメン"
-                  width={400}
-                  height={300}
-                  className="w-full h-auto object-contain relative z-20"
-                />
-                <div className="absolute inset-0 border-[3px] border-black pointer-events-none z-30"></div>
+              <div className="relative bg-black p-[3px]">
+                <div className="relative">
+                  <Image
+                    src="/ramen-photos/ramen1.jpg"
+                    alt="ラーメン"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-contain"
+                  />
+                  <div className="absolute inset-0 border-[3px] border-black pointer-events-none"></div>
+                </div>
               </div>
             </div>
             <p className="text-gray-300 text-sm mt-4 text-center">
