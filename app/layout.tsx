@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: '幸道家 横浜家系ラーメン',
   description: '横浜家系ラーメン幸道家 - 伝統の家系ラーメンを心を込めてお届け',
   generator: 'v0.dev',
+  icons: {
+    icon: '/yokohama-iekei-logo.png',
+    shortcut: '/yokohama-iekei-logo.png',
+    apple: '/yokohama-iekei-logo.png',
+  },
 }
 
 export default function RootLayout({

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { MapPin, Clock, Phone, Star, ChefHat, Utensils, Building, CheckCircle, Users } from "lucide-react"
+import { MapPin, Clock, Phone, Star, Utensils, Building, CheckCircle, Users } from "lucide-react"
 import Image from "next/image"
 
 export default function RamenRestaurant() {
@@ -92,26 +92,34 @@ export default function RamenRestaurant() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <ChefHat className="h-8 w-8 text-red-500" />
+              <Image
+                src="/yokohama-iekei-logo.png"
+                alt="横浜家系ロゴ"
+                width={50}
+                height={50}
+                className="h-10 w-10 md:h-12 md:w-12"
+              />
               <h1 className="text-2xl font-bold text-white">横浜家系ラーメン幸道家</h1>
             </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#home" className="text-white hover:text-red-400 transition-colors">
-                ホーム
-              </a>
-              <a href="#menu" className="text-white hover:text-red-400 transition-colors">
-                メニュー
-              </a>
-              <a href="#about" className="text-white hover:text-red-400 transition-colors">
-                店舗情報
-              </a>
-              <a href="#franchise" className="text-white hover:text-red-400 transition-colors">
-                フランチャイズ
-              </a>
-              <a href="#contact" className="text-white hover:text-red-400 transition-colors">
-                アクセス
-              </a>
-            </nav>
+            <div className="flex items-center space-x-8">
+              <nav className="hidden md:flex space-x-8">
+                <a href="#home" className="text-white hover:text-red-400 transition-colors">
+                  ホーム
+                </a>
+                <a href="#menu" className="text-white hover:text-red-400 transition-colors">
+                  メニュー
+                </a>
+                <a href="#about" className="text-white hover:text-red-400 transition-colors">
+                  店舗情報
+                </a>
+                <a href="#franchise" className="text-white hover:text-red-400 transition-colors">
+                  フランチャイズ
+                </a>
+                <a href="#contact" className="text-white hover:text-red-400 transition-colors">
+                  アクセス
+                </a>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
@@ -127,8 +135,9 @@ export default function RamenRestaurant() {
           priority
         />
         <div className="relative z-20 text-center max-w-4xl mx-auto px-4">
-          <h2 className="text-7xl md:text-9xl font-bold mb-6 text-white" style={{fontSize: 'clamp(4rem, 10vw, 8rem)'}}>
-            横浜家系ラーメン
+          <h2 className="text-7xl md:text-9xl font-bold mb-6 text-white" style={{fontSize: 'clamp(3rem, 8vw, 8rem)'}}>
+            <span className="block md:inline">横浜家系</span>
+            <span className="md:inline">ラーメン</span>
             <br />
             <span className="text-red-500">幸道家</span>
           </h2>
@@ -445,7 +454,13 @@ export default function RamenRestaurant() {
       <footer className="bg-black py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <ChefHat className="h-6 w-6 text-red-500" />
+            <Image
+              src="/yokohama-iekei-logo.png"
+              alt="横浜家系ロゴ"
+              width={30}
+              height={30}
+              className="h-6 w-6"
+            />
             <span className="text-xl font-bold text-white">横浜家系ラーメン幸道家</span>
           </div>
           <p className="text-gray-400">© 2024 横浜家系ラーメン幸道家. All rights reserved.</p>
