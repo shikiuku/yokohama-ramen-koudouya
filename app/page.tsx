@@ -127,12 +127,12 @@ export default function RamenRestaurant() {
           priority
         />
         <div className="relative z-20 text-center max-w-4xl mx-auto px-4">
-          <h2 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+          <h2 className="text-7xl md:text-9xl font-bold mb-6 text-white" style={{fontSize: 'clamp(4rem, 10vw, 8rem)'}}>
             横浜家系ラーメン
             <br />
             <span className="text-red-500">幸道家</span>
           </h2>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">伝統の家系ラーメンを心を込めてお届け</p>
+          <p className="text-2xl md:text-3xl mb-8 text-gray-200">伝統の家系ラーメンを心を込めてお届け</p>
           <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg shadow-2xl">
             メニューを見る
           </Button>
