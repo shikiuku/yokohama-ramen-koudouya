@@ -3,6 +3,15 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* 玉ねぎ楷書フォントの定義 */
+@font-face {
+  font-family: 'Tamanegi Kaisho';
+  src: url('/fonts/tamanegi-kaisho.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -119,6 +128,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Yuji Mai', serif;
+    font-family: 'Tamanegi Kaisho', serif;
   }
 }

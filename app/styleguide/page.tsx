@@ -134,6 +134,84 @@ export default function StyleGuide() {
 
         <Separator className="my-16 bg-red-900" />
 
+        {/* Font Variations */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8">和風フォントバリエーション</h2>
+          <div className="space-y-8">
+            <div className="p-6 bg-gray-900 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-white" style={{fontFamily: "'Yuji Mai', serif"}}>Yuji Mai（優字 舞）- 現在使用中</h3>
+              <p className="text-xl mb-2" style={{fontFamily: "'Yuji Mai', serif"}}>横浜家系ラーメン幸道家へようこそ</p>
+              <p className="text-lg" style={{fontFamily: "'Yuji Mai', serif"}}>伝統の家系ラーメンを心を込めてお届けします。豚骨と鶏ガラを18時間煮込んだ濃厚スープ。</p>
+              <p className="text-gray-300 text-sm mt-2">特徴: 流麗な毛筆風、上品で読みやすい</p>
+            </div>
+
+            <div className="p-6 bg-gray-900 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-white" style={{fontFamily: "'Yuji Boku', serif"}}>Yuji Boku（優字 墨）</h3>
+              <p className="text-xl mb-2" style={{fontFamily: "'Yuji Boku', serif"}}>横浜家系ラーメン幸道家へようこそ</p>
+              <p className="text-lg" style={{fontFamily: "'Yuji Boku', serif"}}>伝統の家系ラーメンを心を込めてお届けします。豚骨と鶏ガラを18時間煮込んだ濃厚スープ。</p>
+              <p className="text-gray-300 text-sm mt-2">特徴: より力強い毛筆風、インパクトのある書体</p>
+            </div>
+
+            <div className="p-6 bg-gray-900 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-white" style={{fontFamily: "'Hachi Maru Pop', cursive"}}>Hachi Maru Pop（はちまるポップ）</h3>
+              <p className="text-xl mb-2" style={{fontFamily: "'Hachi Maru Pop', cursive"}}>横浜家系ラーメン幸道家へようこそ</p>
+              <p className="text-lg" style={{fontFamily: "'Hachi Maru Pop', cursive"}}>伝統の家系ラーメンを心を込めてお届けします。豚骨と鶏ガラを18時間煮込んだ濃厚スープ。</p>
+              <p className="text-gray-300 text-sm mt-2">特徴: 丸みのあるポップな書体、親しみやすい</p>
+            </div>
+
+            <div className="p-6 bg-gray-900 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-white" style={{fontFamily: "'Yusei Magic', sans-serif"}}>Yusei Magic（油性マジック）</h3>
+              <p className="text-xl mb-2" style={{fontFamily: "'Yusei Magic', sans-serif"}}>横浜家系ラーメン幸道家へようこそ</p>
+              <p className="text-lg" style={{fontFamily: "'Yusei Magic', sans-serif"}}>伝統の家系ラーメンを心を込めてお届けします。豚骨と鶏ガラを18時間煮込んだ濃厚スープ。</p>
+              <p className="text-gray-300 text-sm mt-2">特徴: マジック風の手書き文字、カジュアルで温かみがある</p>
+            </div>
+
+            <div className="p-6 bg-gray-900 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-white" style={{fontFamily: "'Dela Gothic One', cursive"}}>Dela Gothic One（デラゴシック）</h3>
+              <p className="text-xl mb-2" style={{fontFamily: "'Dela Gothic One', cursive"}}>横浜家系ラーメン幸道家へようこそ</p>
+              <p className="text-lg" style={{fontFamily: "'Dela Gothic One', cursive"}}>伝統の家系ラーメンを心を込めてお届けします。豚骨と鶏ガラを18時間煮込んだ濃厚スープ。</p>
+              <p className="text-gray-300 text-sm mt-2">特徴: 極太ゴシック、強いインパクト</p>
+            </div>
+
+            <div className="p-6 bg-gray-900 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-white" style={{fontFamily: "'RocknRoll One', sans-serif"}}>RocknRoll One（ロックンロール）</h3>
+              <p className="text-xl mb-2" style={{fontFamily: "'RocknRoll One', sans-serif"}}>横浜家系ラーメン幸道家へようこそ</p>
+              <p className="text-lg" style={{fontFamily: "'RocknRoll One', sans-serif"}}>伝統の家系ラーメンを心を込めてお届けします。豚骨と鶏ガラを18時間煮込んだ濃厚スープ。</p>
+              <p className="text-gray-300 text-sm mt-2">特徴: ポップでレトロな雰囲気、個性的</p>
+            </div>
+
+            <div className="p-6 bg-gray-900 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-white" style={{fontFamily: "'Reggae One', cursive"}}>Reggae One（レゲエ）</h3>
+              <p className="text-xl mb-2" style={{fontFamily: "'Reggae One', cursive"}}>横浜家系ラーメン幸道家へようこそ</p>
+              <p className="text-lg" style={{fontFamily: "'Reggae One', cursive"}}>伝統の家系ラーメンを心を込めてお届けします。豚骨と鶏ガラを18時間煮込んだ濃厚スープ。</p>
+              <p className="text-gray-300 text-sm mt-2">特徴: 丸みのある太字、親しみやすく読みやすい</p>
+            </div>
+
+            <div className="p-6 bg-gray-900 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-white" style={{fontFamily: "'Shippori Mincho', serif"}}>Shippori Mincho（しっぽり明朝）</h3>
+              <p className="text-xl mb-2" style={{fontFamily: "'Shippori Mincho', serif"}}>横浜家系ラーメン幸道家へようこそ</p>
+              <p className="text-lg" style={{fontFamily: "'Shippori Mincho', serif"}}>伝統の家系ラーメンを心を込めてお届けします。豚骨と鶏ガラを18時間煮込んだ濃厚スープ。</p>
+              <p className="text-gray-300 text-sm mt-2">特徴: 伝統的な明朝体、落ち着きと品格</p>
+            </div>
+
+            <div className="p-6 bg-gray-900 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-white" style={{fontFamily: "'Kaisei HarunoUmi', serif"}}>Kaisei HarunoUmi（解星 春の海）</h3>
+              <p className="text-xl mb-2" style={{fontFamily: "'Kaisei HarunoUmi', serif"}}>横浜家系ラーメン幸道家へようこそ</p>
+              <p className="text-lg" style={{fontFamily: "'Kaisei HarunoUmi', serif"}}>伝統の家系ラーメンを心を込めてお届けします。豚骨と鶏ガラを18時間煮込んだ濃厚スープ。</p>
+              <p className="text-gray-300 text-sm mt-2">特徴: 優雅な明朝体、和風の美しさ</p>
+            </div>
+
+            <div className="p-6 bg-gray-900 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-white" style={{fontFamily: "'Zen Antique', serif"}}>Zen Antique（ゼン アンティーク）</h3>
+              <p className="text-xl mb-2" style={{fontFamily: "'Zen Antique', serif"}}>横浜家系ラーメン幸道家へようこそ</p>
+              <p className="text-lg" style={{fontFamily: "'Zen Antique', serif"}}>伝統の家系ラーメンを心を込めてお届けします。豚骨と鶏ガラを18時間煮込んだ濃厚スープ。</p>
+              <p className="text-gray-300 text-sm mt-2">特徴: アンティーク調、味わい深い書体</p>
+            </div>
+          </div>
+        </section>
+
+        <Separator className="my-16 bg-red-900" />
+
         {/* Buttons */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8">ボタン</h2>

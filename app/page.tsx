@@ -88,7 +88,7 @@ export default function RamenRestaurant() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="border-b border-red-900 bg-black sticky top-0 z-50">
+      <header className="bg-black sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -120,8 +120,8 @@ export default function RamenRestaurant() {
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-black/70 z-10" />
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
-          alt="ラーメン店内"
+          src="/ramen-photos/normal-ajitama-ramen.jpg"
+          alt="通常味玉ラーメン"
           fill
           className="object-cover"
           priority
@@ -442,7 +442,7 @@ export default function RamenRestaurant() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-red-900 py-8">
+      <footer className="bg-black py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <ChefHat className="h-6 w-6 text-red-500" />
