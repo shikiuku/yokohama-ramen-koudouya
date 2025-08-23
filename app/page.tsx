@@ -134,15 +134,18 @@ export default function RamenRestaurant() {
           className="object-cover"
           priority
         />
-        <div className="relative z-20 text-center max-w-4xl mx-auto px-4">
-          <h2 className="text-7xl md:text-9xl font-bold mb-6 text-white" style={{fontSize: 'clamp(3rem, 8vw, 8rem)'}}>
-            <span className="block md:inline">横浜家系</span>
-            <span className="md:inline">ラーメン</span>
-            <br />
-            <span className="text-red-500">幸道家</span>
+        <div className="relative z-20 text-center max-w-6xl mx-auto px-4">
+          <h2 className="font-bold mb-6 text-white leading-tight">
+            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+              <span className="inline-block sm:hidden">横浜家系<br />ラーメン</span>
+              <span className="hidden sm:inline-block whitespace-nowrap">横浜家系ラーメン</span>
+            </span>
+            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-red-500 mt-2">
+              幸道家
+            </span>
           </h2>
-          <p className="text-2xl md:text-3xl mb-8 text-gray-200">伝統の家系ラーメンを心を込めてお届け</p>
-          <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg shadow-2xl">
+          <p className="text-xl sm:text-2xl md:text-3xl mb-8 text-gray-200">伝統の家系ラーメンを心を込めてお届け</p>
+          <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-2xl">
             メニューを見る
           </Button>
         </div>
@@ -463,7 +466,7 @@ export default function RamenRestaurant() {
             />
             <span className="text-xl font-bold text-white">横浜家系ラーメン幸道家</span>
           </div>
-          <p className="text-gray-400">© 2024 横浜家系ラーメン幸道家. All rights reserved.</p>
+          <p className="text-gray-400">© 2025 横浜家系ラーメン幸道家. All rights reserved.</p>
         </div>
       </footer>
     </div>
