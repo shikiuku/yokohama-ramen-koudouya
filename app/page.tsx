@@ -109,11 +109,11 @@ export default function RamenRestaurant() {
                 <a href="#menu" className="text-white hover:text-red-400 transition-colors">
                   メニュー
                 </a>
-                <a href="#about" className="text-white hover:text-red-400 transition-colors">
-                  店舗情報
+                <a href="/stores" className="text-white hover:text-red-400 transition-colors">
+                  配達エリア
                 </a>
                 <a href="#franchise" className="text-white hover:text-red-400 transition-colors">
-                  フランチャイズ
+                  ゴーストキッチン
                 </a>
                 <a href="#contact" className="text-white hover:text-red-400 transition-colors">
                   アクセス
@@ -197,7 +197,7 @@ export default function RamenRestaurant() {
                     <div>
                       {category.items.map((item, itemIndex) => (
                         <div key={itemIndex} className="flex justify-between items-center py-3 border-b border-white/30">
-                          <span className="text-white">{item.name}</span>
+                          <span className="text-white font-medium" style={item.name.includes('餃子') ? {fontFamily: 'system-ui, -apple-system, sans-serif'} : {}}>{item.name}</span>
                           <span className="text-yellow-400 font-bold">{item.price}</span>
                         </div>
                       ))}
@@ -316,33 +316,37 @@ export default function RamenRestaurant() {
         </div>
       </section>
 
-      {/* Franchise Section */}
+      {/* Ghost Kitchen Franchise Section */}
       <section id="franchise" className="py-20 bg-red-600">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-4xl md:text-5xl font-bold mb-4 text-white">フランチャイズ募集</h3>
-            <p className="text-xl text-white/90">幸道家の味を全国に広めませんか？</p>
+            <h3 className="text-4xl md:text-5xl font-bold mb-4 text-white">ゴーストキッチン募集</h3>
+            <p className="text-xl text-white/90">幸道家のUber Eatsゴーストキッチンパートナーを募集中</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
-              <h4 className="text-3xl font-bold mb-6 text-white">フランチャイズの特徴</h4>
+              <h4 className="text-3xl font-bold mb-6 text-white">ゴーストキッチンの特徴</h4>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="text-white mt-1 flex-shrink-0" />
-                  <p className="text-white/90">創業30年の確かな実績とブランド力</p>
+                  <p className="text-white/90">低コストで開業可能（店舗工事不要）</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="text-white mt-1 flex-shrink-0" />
-                  <p className="text-white/90">本部による徹底した開業・運営サポート</p>
+                  <p className="text-white/90">Uber Eats配達システム利用で集客力抜群</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="text-white mt-1 flex-shrink-0" />
-                  <p className="text-white/90">安定した食材供給システム</p>
+                  <p className="text-white/90">完全セントラルキッチン方式で品質維持</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="text-white mt-1 flex-shrink-0" />
-                  <p className="text-white/90">充実した研修制度</p>
+                  <p className="text-white/90">充実したデリバリー運営サポート</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="text-white mt-1 flex-shrink-0" />
+                  <p className="text-white/90">初期在庫・食材は本部が完全管理</p>
                 </div>
               </div>
               <div className="flex space-x-4">
@@ -351,33 +355,38 @@ export default function RamenRestaurant() {
                   variant="outline"
                   className="border-white text-white hover:bg-white hover:text-red-600 bg-transparent"
                 >
-                  説明会予約
+                  オンライン説明会
                 </Button>
               </div>
             </div>
 
             <Card className="bg-white">
               <CardContent className="p-8">
-                <h4 className="text-2xl font-bold text-black mb-6">開業資金目安</h4>
+                <h4 className="text-2xl font-bold text-black mb-6">ゴーストキッチン開業費用</h4>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center border-b border-gray-200 pb-2">
                     <span className="text-gray-700">初期費用</span>
-                    <span className="font-bold text-black">300万円</span>
+                    <span className="font-bold text-black">150万円</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-gray-200 pb-2">
-                    <span className="text-gray-700">設備投資</span>
-                    <span className="font-bold text-black">800万円</span>
+                    <span className="text-gray-700">調理設備</span>
+                    <span className="font-bold text-black">200万円</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-gray-200 pb-2">
                     <span className="text-gray-700">運転資金</span>
-                    <span className="font-bold text-black">200万円</span>
+                    <span className="font-bold text-black">100万円</span>
                   </div>
                   <div className="flex justify-between items-center pt-4">
                     <span className="text-xl font-bold text-black">総投資額</span>
-                    <span className="text-2xl font-bold text-red-600">約1,300万円</span>
+                    <span className="text-2xl font-bold text-red-600">約450万円</span>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 mt-4">※物件取得費・保証金は別途</p>
+                <p className="text-sm text-gray-600 mt-4">※物件賃料・保証金は別途</p>
+                <div className="mt-4 p-3 bg-red-50 rounded-lg">
+                  <p className="text-sm text-red-700 font-medium">
+                    従来店舗型の約1/3のコストで開業可能！
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -426,23 +435,23 @@ export default function RamenRestaurant() {
             <Card className="bg-gray-800/50 backdrop-blur-sm border-gray-700 p-8">
               <CardContent className="space-y-6">
                 <div>
-                  <h4 className="text-2xl font-bold text-white mb-4">フランチャイズお問い合わせ</h4>
+                  <h4 className="text-2xl font-bold text-white mb-4">ゴーストキッチンお問い合わせ</h4>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-4">
                       <Building className="text-red-500 h-6 w-6" />
                       <div>
-                        <p className="text-white font-bold">フランチャイズ本部</p>
+                        <p className="text-white font-bold">ゴーストキッチン本部</p>
                         <p className="text-2xl font-bold text-red-400">0120-456-789</p>
                         <p className="text-gray-300 text-sm">受付時間: 平日 9:00-18:00</p>
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <Button className="bg-red-600 hover:bg-red-700 text-white w-full">フランチャイズ資料請求</Button>
+                      <Button className="bg-red-600 hover:bg-red-700 text-white w-full">ゴーストキッチン資料請求</Button>
                       <Button
                         variant="outline"
                         className="border-red-500 text-red-400 hover:bg-red-500 hover:text-white w-full bg-transparent"
                       >
-                        説明会予約
+                        オンライン説明会予約
                       </Button>
                     </div>
                   </div>
